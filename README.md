@@ -6,6 +6,8 @@ Note that many years have passed since then, but still I decided to share some u
 
 ### Common: blocks, items, food, weapons
 
+![common](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/87506e24-3a6b-405d-b61d-28237c9763fa)
+
 Several more melee weapons - spear, battle axe, halberdier, mace, dagger - all made of wood, stone, iron, gold and diamonds
 Crossbow and bolts for it; whole copy of a bow
 Throwable stone - thanks Stronghold 2 game for the idea; whole copy of a snowball
@@ -41,6 +43,8 @@ ModLoader.addRecipe(new ItemStack(gobletWine, 1), new Object [] {" A ", "BCB", "
 ```
 
 ### Coats (crests)
+
+![coats](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/53e2b8de-c3b4-4730-943b-f3b8cc54b80c)
 
 Coats of arms, crests, personal logos, all in white-black to provide authentic coloring later - once again, thanks Stronghold 2 game for the idea
 The figures are:
