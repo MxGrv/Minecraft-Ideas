@@ -72,3 +72,5 @@ ModLoader.addRecipe(new ItemStack(haystack, 1), new Object [] {"###", "%%%", "##
 ```
 
 ## Fast Food mod
+
+Divided into 8 sub-mods, one mandatory (core) and 7 optional (loadable)
