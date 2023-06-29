@@ -111,7 +111,22 @@ Items:
 
 ### Pizzas
 
+![pizzas](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/30df576d-8b7d-40de-9cf9-de3bc48d5579)
+
+Items:
+* raw pizzas, raw slices, ready pizzas, ready slices: cheese, anchovy, vegetarian, ham, salami, mushroom, ham and mushroom, ham and pineapple, olive, artichoke, four season, assortie
+* artichoke
+* mushroom mix, ham mix, artichoke mix, olive mix, ham and mushroom mix, ham and pineapple mix, four seasons mix, assortie mix
+
 ### Snacks
+
+![snacks](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/2f1d284d-0053-45c2-87a1-b8ac779106ed)
+
+Items:
+* salt chips, cheese chips, onion chips, bacon chips
+* flat choco bar, small choco bar, big choco bar
+* baguette bun
+* baguette with ham and cheese, baguette with salami, baguette with salami and cheese, baguette with salami and ham and cheese
 
 ### Sushi
 
