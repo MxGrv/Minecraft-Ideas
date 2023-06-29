@@ -130,8 +130,29 @@ Items:
 
 ### Sushi
 
+![sushi](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/120338dd-d24f-44c1-838c-da0eb14bcd25)
+
+Items:
+* rice, nori, caviar, wasabi
+* nigirisushi, gunkanmaki, futomaki, hosomaki, uramaki, inarisushi
+
 ### Ice cream
+
+![icecreams](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/79359d73-3470-4461-9b12-2587f5d5a864)
+
+Items:
+* ice balls, paper cups, waffle cups, waffle cones: apple, choco, melon, pineapple, strawberry, raspberry, cherry, orange, peach, grape, vanilla, caramel, stracciatella (vanilla with choco chips or crumbs)
+* vanilla and chocolate mix
+* paper cup, waffle cup, waffle cone
 
 ### Drinks
 
+![drinks](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/16600de0-950b-4236-ac19-bb8df9a4fc8c)
 
+Items:
+* juices: apple, tomato, pineapple, cherry, orange, peach, grape, berry, multifruit
+* berry mix, multifruit mix
+* milk shakes: apple, choco, strawberry, raspberry, cherry, vanilla, caramel
+* ice teas: strawberry, orange, peach
+* fizzy drinks: cola, orange (Fanta reference), lime (Sprite reference)
+* chicory, coffee, grass tea
