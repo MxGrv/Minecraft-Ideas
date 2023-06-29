@@ -90,6 +90,65 @@ Items:
 * sinapis
 * mustard, mayonnaise, ketchup
 
+Code:
+```
+ModLoader.addShapelessRecipe(new ItemStack(bowlWater, 1), new Object [] {Item.bucketWater, Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlWater, 8), new Object [] {"###", "#%#", "###", Character.valueOf('%'), Item.bucketWater, Character.valueOf('#'), Item.bowlEmpty});
+
+ModLoader.addSmelting(bowlWater.shiftedIndex, new ItemStack(salt, 1));
+
+ModLoader.addShapelessRecipe(new ItemStack(bowlMilk, 1), new Object [] {Item.bucketMilk, Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMilk, 8), new Object [] {"###", "#%#", "###", Character.valueOf('%'), Item.bucketMilk, Character.valueOf('#'), Item.bowlEmpty});
+
+ModLoader.addSmelting(bowlMilk.shiftedIndex, new ItemStack(cheese, 1));
+
+ModLoader.addRecipe(new ItemStack(vegetables, 1), new Object [] {"ACD", "ABD", "BBD", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('B'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('C'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('D'), new ItemStack(Item.dyePowder, 1, 1)});
+ModLoader.addRecipe(new ItemStack(tomato, 1), new Object [] {" % ", "###", " % ", Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 1), Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(dough, 4), new Object [] {"ABA", "CDE", "ABA", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bucketWater, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.salt});
+ModLoader.addRecipe(new ItemStack(dough, 4), new Object [] {"ABA", "EDC", "ABA", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bucketWater, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.salt});
+ModLoader.addRecipe(new ItemStack(dough, 4), new Object [] {"ABA", "CDE", "ABA", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bowlWater, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.salt});
+ModLoader.addRecipe(new ItemStack(dough, 4), new Object [] {"ABA", "EDC", "ABA", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bowlWater, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.salt});
+ModLoader.addRecipe(new ItemStack(pineapple, 1), new Object [] {" % ", "#%#", " # ", Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 11), Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(ham, 8), new Object [] {" #", "# ", Character.valueOf('#'), Item.porkCooked});
+ModLoader.addRecipe(new ItemStack(salami, 12), new Object [] {" % ", "###", " % ", Character.valueOf('#'), Item.porkCooked, Character.valueOf('%'), Item.leather});
+ModLoader.addRecipe(new ItemStack(olives, 1), new Object [] {" % ", "# #", " % ", Character.valueOf('#'), Block.vine, Character.valueOf('%'), new ItemStack(Item.dyePowder, 1, 0)});
+ModLoader.addRecipe(new ItemStack(olives, 1), new Object [] {" # ", "% %", " # ", Character.valueOf('#'), Block.vine, Character.valueOf('%'), new ItemStack(Item.dyePowder, 1, 0)});
+ModLoader.addSmelting(Item.ham.shiftedIndex, new ItemStack(Item.bacon, 1));
+ModLoader.addRecipe(new ItemStack(lettuce, 1), new Object [] {" #%", "#%#", "%# ", Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 2)});
+ModLoader.addRecipe(new ItemStack(lettuce, 1), new Object [] {"%# ", "#%#", " #%", Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 2)});
+ModLoader.addRecipe(new ItemStack(ketchup, 1), new Object [] {"BCD", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 1), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bucketWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.tomato, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(ketchup, 1), new Object [] {"DCB", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 1), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bucketWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.tomato, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(ketchup, 1), new Object [] {"BCD", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 1), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bowlWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.tomato, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(ketchup, 1), new Object [] {"DCB", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 1), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bowlWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.tomato, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(mayonnaise, 1), new Object [] {"BCD", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bucketWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.egg, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(mayonnaise, 1), new Object [] {"DCB", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bucketWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.egg, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(mayonnaise, 1), new Object [] {"BCD", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bowlWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.egg, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(mayonnaise, 1), new Object [] {"DCB", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bowlWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.egg, Character.valueOf('F'), Item.glassBottle});
+
+ModLoader.addRecipe(new ItemStack(onion, 1), new Object [] {" # ", "% %", " # ", Character.valueOf('%'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('#'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(onion, 1), new Object [] {" % ", "# #", " % ", Character.valueOf('%'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('#'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+
+ModLoader.addRecipe(new ItemStack(potato, 1), new Object [] {" % ", "#$#", " % ", Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 0), Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('$'), new ItemStack(Item.dyePowder, 1, 15)});
+ModLoader.addRecipe(new ItemStack(potato, 1), new Object [] {" # ", "%$%", " # ", Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 0), Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('$'), new ItemStack(Item.dyePowder, 1, 15)});
+ModLoader.addRecipe(new ItemStack(sinapis, 1), new Object [] {" % ", "#$#", " % ", Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('$'), new ItemStack(Item.dyePowder, 1, 11)});
+ModLoader.addRecipe(new ItemStack(sinapis, 1), new Object [] {" # ", "%$%", " # ", Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('$'), new ItemStack(Item.dyePowder, 1, 11)});
+ModLoader.addRecipe(new ItemStack(mustard, 1), new Object [] {"BCD", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 11), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bucketWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.sinapis, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(mustard, 1), new Object [] {"DCB", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 11), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bucketWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.sinapis, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(mustard, 1), new Object [] {"BCD", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 11), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bowlWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.sinapis, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(mustard, 1), new Object [] {"DCB", "AEA", " F ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 11), Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.bowlWater, Character.valueOf('D'), Item.salt, Character.valueOf('E'), Item.sinapis, Character.valueOf('F'), Item.glassBottle});
+ModLoader.addRecipe(new ItemStack(strawberry, 1), new Object [] {"BDB", "ACA", " A ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 1), Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('C'), Item.seeds, Character.valueOf('D'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(raspberry, 1), new Object [] {"DBD", "ACA", " A ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 1), Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('C'), Item.seeds, Character.valueOf('D'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(cherry, 1), new Object [] {"DBD", "ACA", "A A", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 1), Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('C'), Item.seeds, Character.valueOf('D'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(orange, 1), new Object [] {"ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('B'), Item.appleRed});
+ModLoader.addRecipe(new ItemStack(orange, 1), new Object [] {" A ", " B ", " A ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('B'), Item.appleRed});
+ModLoader.addRecipe(new ItemStack(peach, 1), new Object [] {"ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 11), Character.valueOf('B'), Item.appleRed});
+ModLoader.addRecipe(new ItemStack(peach, 1), new Object [] {" A ", " B ", " A ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 11), Character.valueOf('B'), Item.appleRed});
+ModLoader.addRecipe(new ItemStack(grapes, 1), new Object [] {"ABA", "ACA", " A ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 13), Character.valueOf('B'), Item.seeds, Character.valueOf('C'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(grapes, 1), new Object [] {"ACA", "ABA", " A ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 13), Character.valueOf('B'), Item.seeds, Character.valueOf('C'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(vanilla, 1), new Object [] {" AB", "ACA", "BA ", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 0), Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('C'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addSmelting(Item.sugar.shiftedIndex, new ItemStack(Item.caramel, 1));
+```
+
 ### Burgers
 
 ![burgers](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/83d56316-3b6f-4427-b66f-f62732910208)
