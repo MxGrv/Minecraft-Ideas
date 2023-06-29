@@ -74,3 +74,49 @@ ModLoader.addRecipe(new ItemStack(haystack, 1), new Object [] {"###", "%%%", "##
 ## Fast Food mod
 
 Divided into 8 sub-mods, one mandatory (core) and 7 optional (loadable)
+
+### Common
+
+![common](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/89010ac6-9e0a-4354-8e7e-ea06a0590ba8)
+
+Items:
+* milk bowl, cheese, water bowl, salt
+* dough
+* ham, bacon, salami
+* caramel
+* strawberry, raspberry, cherry, orange, peach, pineapple, grape, vanilla, olives
+* tomato, onion, potato (there was none so long ago), lettuce
+* vegetable mix
+* sinapis
+* mustard, mayonnaise, ketchup
+
+### Burgers
+
+![burgers](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/83d56316-3b6f-4427-b66f-f62732910208)
+
+Items:
+* burger bun, beef patty, chicken patty, fish patty
+* vegetable salad, Caesar salad
+* ham burger, cheese burger, big burger, chicken burger, fish burger, bacon burger
+* beef roll, chicken roll, fish roll
+* french fries, chicken nuggets
+
+### Hotdogs
+
+![hotdogs](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/f93227de-889f-48ad-8bef-9358638609e1)
+
+Items:
+* hotdog bun, pork sausage, beef sausage, chicken sausage
+* standard hotdog, pork hotdog, beef hotdog, chicken hotdog, mild hotdog, spicy hotdog, cheese hotdog, bacon hotdog
+
+### Pizzas
+
+### Snacks
+
+### Sushi
+
+### Ice cream
+
+### Drinks
+
+
