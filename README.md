@@ -205,6 +205,33 @@ Items:
 * hotdog bun, pork sausage, beef sausage, chicken sausage
 * standard hotdog, pork hotdog, beef hotdog, chicken hotdog, mild hotdog, spicy hotdog, cheese hotdog, bacon hotdog
 
+Code:
+```
+ModLoader.addRecipe(new ItemStack(hotdogBun, 1), new Object [] {"CDE", "ABA", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bucketWater, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.salt});
+ModLoader.addRecipe(new ItemStack(hotdogBun, 1), new Object [] {"EDC", "ABA", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bucketWater, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.salt});
+ModLoader.addRecipe(new ItemStack(hotdogBun, 1), new Object [] {"CDE", "ABA", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bowlWater, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.salt});
+ModLoader.addRecipe(new ItemStack(hotdogBun, 1), new Object [] {"EDC", "ABA", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bowlWater, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.salt});
+ModLoader.addRecipe(new ItemStack(sausageBeef, 2), new Object [] {"##", Character.valueOf('#'), Item.beefCooked});
+ModLoader.addRecipe(new ItemStack(sausageChicken, 2), new Object [] {"##", Character.valueOf('#'), Item.chickenCooked});
+ModLoader.addRecipe(new ItemStack(sausagePork, 2), new Object [] {"##", Character.valueOf('#'), Item.porkCooked});
+ModLoader.addRecipe(new ItemStack(hotdogStandard, 1), new Object [] {"CDE", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageBeef, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.vegetables, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogStandard, 1), new Object [] {"EDC", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageBeef, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.vegetables, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogMild, 1), new Object [] {"CDE", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageChicken, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.lettuce, Character.valueOf('E'), Item.mayonnaise});
+ModLoader.addRecipe(new ItemStack(hotdogMild, 1), new Object [] {"EDC", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageChicken, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.lettuce, Character.valueOf('E'), Item.mayonnaise});
+ModLoader.addRecipe(new ItemStack(hotdogSpicy, 1), new Object [] {"CDE", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausagePork, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.onion, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogSpicy, 1), new Object [] {"EDC", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausagePork, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.onion, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogBeef, 1), new Object [] {"CDE", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageBeef, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.lettuce, Character.valueOf('E'), Item.mayonnaise});
+ModLoader.addRecipe(new ItemStack(hotdogBeef, 1), new Object [] {"EDC", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageBeef, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.lettuce, Character.valueOf('E'), Item.mayonnaise});
+ModLoader.addRecipe(new ItemStack(hotdogPork, 1), new Object [] {"CDE", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausagePork, Character.valueOf('C'), Item.mayonnaise, Character.valueOf('D'), Item.vegetables, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogPork, 1), new Object [] {"EDC", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausagePork, Character.valueOf('C'), Item.mayonnaise, Character.valueOf('D'), Item.vegetables, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogChicken, 1), new Object [] {"CDE", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageChicken, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.onion, Character.valueOf('E'), Item.mayonnaise});
+ModLoader.addRecipe(new ItemStack(hotdogChicken, 1), new Object [] {"EDC", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageChicken, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.onion, Character.valueOf('E'), Item.mayonnaise});
+ModLoader.addRecipe(new ItemStack(hotdogCheese, 1), new Object [] {"CDE", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageBeef, Character.valueOf('C'), Item.mayonnaise, Character.valueOf('D'), Item.cheese, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogCheese, 1), new Object [] {"EDC", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageBeef, Character.valueOf('C'), Item.mayonnaise, Character.valueOf('D'), Item.cheese, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogBacon, 1), new Object [] {"CDE", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageChicken, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.bacon, Character.valueOf('E'), Item.mustard});
+ModLoader.addRecipe(new ItemStack(hotdogBacon, 1), new Object [] {"EDC", " B ", " A ", Character.valueOf('A'), Item.hotdogBun, Character.valueOf('B'), Item.sausageChicken, Character.valueOf('C'), Item.ketchup, Character.valueOf('D'), Item.bacon, Character.valueOf('E'), Item.mustard});
+```
+
 ### Pizzas
 
 ![pizzas](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/30df576d-8b7d-40de-9cf9-de3bc48d5579)
