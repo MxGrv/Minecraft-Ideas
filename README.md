@@ -1,3 +1,4 @@
+![stoneSmooth](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/7b6ca1de-cf0a-448a-ab10-47275780d7e6)
 # Minecraft-Ideas
 Ideas for Minecraft mods, ever visited me, since the far 1.8 Beta, some code and pictures
 Note that many years have passed since then, but still I decided to share some unaccomplished work, because of the wasted time regrets, but I hope someone would find it all useful someday :)
@@ -63,6 +64,8 @@ Blocks:
 Items:
 * acorns - dropped from oaks
 * corned goods - chicken, beef, pork, fish - crafted with salt
+* medicine - rose oil
+* spices
 
 Some notable crafting code:
 ```
@@ -605,3 +608,28 @@ ModLoader.addRecipe(new ItemStack(milkshakeCaramel, 1), new Object [] {"EBA", "C
 ModLoader.addRecipe(new ItemStack(milkshakeCaramel, 1), new Object [] {"ABE", "CDC", "CCC", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), Item.bowlMilk, Character.valueOf('C'), Item.paper, Character.valueOf('D'), Item.sugar, Character.valueOf('E'), Item.caramel});
 ModLoader.addRecipe(new ItemStack(milkshakeCaramel, 1), new Object [] {"EBA", "CDC", "CCC", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), Item.bowlMilk, Character.valueOf('C'), Item.paper, Character.valueOf('D'), Item.sugar, Character.valueOf('E'), Item.caramel});
 ```
+
+## Stonecutters mod
+
+Adds two new blocks of chiseled stone, similar to sandstone and quartz blocks, - lined and smooth
+
+![stoneLinedBlockSide](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/ea1c5b28-f4ac-4d15-bbc2-08c8543e92e1)
+![stoneLinedBlockVert](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/41756d04-bc0b-4bf5-baf3-9a619a58b8f6)
+![stoneSmooth](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/143898e3-01cf-4d5b-a6a6-b03e111bc430)
+
+## Wheat block mod
+
+Adds a new block of wheat, especially useful for medieval style roofs
+
+![wheatBlockSide](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/41af8649-b2c1-473d-b901-5a20300854b4)
+![wheatBlockBottom](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/ff2fe797-7491-40da-8bb8-1643b48037ff)
+![wheatBlockTop](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/c4e60be5-15fa-4815-a57c-279e628026b5)
+
+## Other mods
+
+Partially implemented:
+* nether bricks crafting and smelting from nether rock
+* obsidian generator (crafted of glass, planks, stone, a trapdoor, a piston and redstone dust) with diamond discs
+* cells for storing liquids (water, lava and milk)
+* glass bottles with milk
+* glass bottles with experience - can be enchanted
