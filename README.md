@@ -394,8 +394,40 @@ ModLoader.addRecipe(new ItemStack(chocoBarSmall, 2), new Object [] {"AEA", "CDC"
 ![sushi](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/120338dd-d24f-44c1-838c-da0eb14bcd25)
 
 Items:
-* rice, nori, caviar, wasabi
+* rice, nori, caviar (roe), wasabi
 * nigirisushi, gunkanmaki, futomaki, hosomaki, uramaki, inarisushi
+
+Code:
+```
+ModLoader.addRecipe(new ItemStack(rice, 1), new Object [] {"ABA", "BCB", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('C'), Item.bucketWater});
+ModLoader.addRecipe(new ItemStack(rice, 1), new Object [] {"BAB", "ACA", "BAB", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('C'), Item.bucketWater});
+ModLoader.addRecipe(new ItemStack(rice, 1), new Object [] {"ABA", "BCB", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('C'), Item.bowlWater});
+ModLoader.addRecipe(new ItemStack(rice, 1), new Object [] {"BAB", "ACA", "BAB", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 15), Character.valueOf('B'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('C'), Item.bowlWater});
+ModLoader.addRecipe(new ItemStack(nori, 4), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 0), Character.valueOf('C'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('D'), Item.bucketWater});
+ModLoader.addRecipe(new ItemStack(nori, 4), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 0), Character.valueOf('C'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('D'), Item.bucketWater});
+ModLoader.addRecipe(new ItemStack(nori, 4), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 0), Character.valueOf('C'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('D'), Item.bowlWater});
+ModLoader.addRecipe(new ItemStack(nori, 4), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 2), Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 0), Character.valueOf('C'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('D'), Item.bowlWater});
+ModLoader.addRecipe(new ItemStack(caviar, 1), new Object [] {"A", "B", "C", Character.valueOf('A'), Item.fishRaw, Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('C'), Item.egg});
+ModLoader.addRecipe(new ItemStack(caviar, 1), new Object [] {"A", "C", "B", Character.valueOf('A'), Item.fishRaw, Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('C'), Item.egg});
+ModLoader.addRecipe(new ItemStack(caviar, 1), new Object [] {"B", "A", "C", Character.valueOf('A'), Item.fishRaw, Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('C'), Item.egg});
+ModLoader.addRecipe(new ItemStack(caviar, 1), new Object [] {"B", "C", "A", Character.valueOf('A'), Item.fishRaw, Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('C'), Item.egg});
+ModLoader.addRecipe(new ItemStack(caviar, 1), new Object [] {"C", "A", "B", Character.valueOf('A'), Item.fishRaw, Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('C'), Item.egg});
+ModLoader.addRecipe(new ItemStack(caviar, 1), new Object [] {"C", "B", "A", Character.valueOf('A'), Item.fishRaw, Character.valueOf('B'), new ItemStack(Item.dyePowder, 1, 14), Character.valueOf('C'), Item.egg});
+ModLoader.addRecipe(new ItemStack(wasabi, 1), new Object [] {"#", "%", Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 10), Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(wasabi, 1), new Object [] {"%", "#", Character.valueOf('#'), new ItemStack(Item.dyePowder, 1, 10), Character.valueOf('%'), new ItemStack(BlockTallGrass.tallGrass, 1, 1)});
+ModLoader.addRecipe(new ItemStack(sushiNigirizushi, 2), new Object [] {"A", "B", "C", Character.valueOf('A'), Item.fishRaw, Character.valueOf('B'), Item.nori, Character.valueOf('C'), Item.rice});
+ModLoader.addRecipe(new ItemStack(sushiGunkanmaki, 4), new Object [] {"AA", "BC", "CB", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.nori, Character.valueOf('C'), Item.rice});
+ModLoader.addRecipe(new ItemStack(sushiGunkanmaki, 4), new Object [] {"AA", "CB", "BC", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.nori, Character.valueOf('C'), Item.rice});
+ModLoader.addRecipe(new ItemStack(sushiFutomaki, 2), new Object [] {"ABC", " D ", " E ", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.fishRaw, Character.valueOf('C'), Item.wasabi, Character.valueOf('D'), Item.rice, Character.valueOf('E'), Item.nori});
+ModLoader.addRecipe(new ItemStack(sushiFutomaki, 2), new Object [] {"ACB", " D ", " E ", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.fishRaw, Character.valueOf('C'), Item.wasabi, Character.valueOf('D'), Item.rice, Character.valueOf('E'), Item.nori});
+ModLoader.addRecipe(new ItemStack(sushiFutomaki, 2), new Object [] {"BAC", " D ", " E ", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.fishRaw, Character.valueOf('C'), Item.wasabi, Character.valueOf('D'), Item.rice, Character.valueOf('E'), Item.nori});
+ModLoader.addRecipe(new ItemStack(sushiFutomaki, 2), new Object [] {"BCA", " D ", " E ", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.fishRaw, Character.valueOf('C'), Item.wasabi, Character.valueOf('D'), Item.rice, Character.valueOf('E'), Item.nori});
+ModLoader.addRecipe(new ItemStack(sushiFutomaki, 2), new Object [] {"CAB", " D ", " E ", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.fishRaw, Character.valueOf('C'), Item.wasabi, Character.valueOf('D'), Item.rice, Character.valueOf('E'), Item.nori});
+ModLoader.addRecipe(new ItemStack(sushiFutomaki, 2), new Object [] {"CBA", " D ", " E ", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.fishRaw, Character.valueOf('C'), Item.wasabi, Character.valueOf('D'), Item.rice, Character.valueOf('E'), Item.nori});
+ModLoader.addRecipe(new ItemStack(sushiHosomaki, 4), new Object [] {"A", "B", "C", Character.valueOf('A'), Item.fishRaw, Character.valueOf('B'), Item.rice, Character.valueOf('C'), Item.nori});
+ModLoader.addRecipe(new ItemStack(sushiUramaki, 6), new Object [] {"ABA", "CDC", Character.valueOf('A'), Item.caviar, Character.valueOf('B'), Item.wasabi, Character.valueOf('C'), Item.nori, Character.valueOf('D'), Item.rice});
+ModLoader.addRecipe(new ItemStack(sushiInarizushi, 1), new Object [] {"ABA", Character.valueOf('A'), Item.rice, Character.valueOf('B'), Item.wasabi});
+```
 
 ### Ice cream
 
