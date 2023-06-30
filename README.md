@@ -362,6 +362,33 @@ Items:
 * baguette bun
 * baguette with ham and cheese, baguette with salami, baguette with salami and cheese, baguette with salami and ham and cheese
 
+Code:
+```
+ModLoader.addRecipe(new ItemStack(baguetteBun, 2), new Object [] {"CBA", "EAE", "ABD", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bucketWater, Character.valueOf('C'), Item.salt, Character.valueOf('D'), Item.sugar, Character.valueOf('E'), Item.egg});
+ModLoader.addRecipe(new ItemStack(baguetteBun, 2), new Object [] {"DBA", "EAE", "ABC", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bucketWater, Character.valueOf('C'), Item.salt, Character.valueOf('D'), Item.sugar, Character.valueOf('E'), Item.egg});
+ModLoader.addRecipe(new ItemStack(baguetteBun, 2), new Object [] {"CBA", "EAE", "ABD", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bowlWater, Character.valueOf('C'), Item.salt, Character.valueOf('D'), Item.sugar, Character.valueOf('E'), Item.egg});
+ModLoader.addRecipe(new ItemStack(baguetteBun, 2), new Object [] {"DBA", "EAE", "ABC", Character.valueOf('A'), Item.wheat, Character.valueOf('B'), Item.bowlWater, Character.valueOf('C'), Item.salt, Character.valueOf('D'), Item.sugar, Character.valueOf('E'), Item.egg});
+ModLoader.addRecipe(new ItemStack(baguetteHamCheese, 1), new Object [] {" A ", "BCB", " D ", Character.valueOf('A'), Item.mayonnaise, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.ham, Character.valueOf('D'), Item.baguetteBun});
+ModLoader.addRecipe(new ItemStack(baguetteSalami, 1), new Object [] {"A", "C", "D", Character.valueOf('A'), Item.mayonnaise, Character.valueOf('C'), Item.ham, Character.valueOf('D'), Item.baguetteBun});
+ModLoader.addRecipe(new ItemStack(baguetteSalamiCheese, 1), new Object [] {" A ", "BCB", " D ", Character.valueOf('A'), Item.mayonnaise, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.salami, Character.valueOf('D'), Item.baguetteBun});
+ModLoader.addRecipe(new ItemStack(baguetteSalamiHamCheese, 1), new Object [] {"CAE", "B B", " D ", Character.valueOf('A'), Item.mayonnaise, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.ham, Character.valueOf('D'), Item.baguetteBun, Character.valueOf('E'), Item.salami});
+ModLoader.addRecipe(new ItemStack(baguetteSalamiHamCheese, 1), new Object [] {"EAC", "B B", " D ", Character.valueOf('A'), Item.mayonnaise, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.ham, Character.valueOf('D'), Item.baguetteBun, Character.valueOf('E'), Item.salami});
+ModLoader.addRecipe(new ItemStack(chipsSalt, 1), new Object [] {"A A", "DCD", " D ", Character.valueOf('A'), Item.salt, Character.valueOf('C'), Item.potato, Character.valueOf('D'), Item.paper});
+ModLoader.addRecipe(new ItemStack(chipsCheese, 1), new Object [] {"ABA", "DCD", " D ", Character.valueOf('A'), Item.salt, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.potato, Character.valueOf('D'), Item.paper});
+ModLoader.addRecipe(new ItemStack(chipsOnion, 1), new Object [] {"ABA", "DCD", " D ", Character.valueOf('A'), Item.salt, Character.valueOf('B'), Item.onion, Character.valueOf('C'), Item.potato, Character.valueOf('D'), Item.paper});
+ModLoader.addRecipe(new ItemStack(chipsBacon, 1), new Object [] {"ABA", "DCD", " D ", Character.valueOf('A'), Item.salt, Character.valueOf('B'), Item.bacon, Character.valueOf('C'), Item.potato, Character.valueOf('D'), Item.paper});
+ModLoader.addRecipe(new ItemStack(chocoBarFlat, 4), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bucketMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.salt});
+ModLoader.addRecipe(new ItemStack(chocoBarFlat, 4), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bucketMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.salt});
+ModLoader.addRecipe(new ItemStack(chocoBarFlat, 4), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bowlMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.salt});
+ModLoader.addRecipe(new ItemStack(chocoBarFlat, 4), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bowlMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.salt});
+ModLoader.addRecipe(new ItemStack(chocoBarBig, 2), new Object [] {"AEA", "CDC", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bucketMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.caramel});
+ModLoader.addRecipe(new ItemStack(chocoBarBig, 2), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bucketMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.caramel});
+ModLoader.addRecipe(new ItemStack(chocoBarBig, 2), new Object [] {"AEA", "CDC", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bowlMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.caramel});
+ModLoader.addRecipe(new ItemStack(chocoBarBig, 2), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bowlMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.caramel});
+ModLoader.addRecipe(new ItemStack(chocoBarSmall, 2), new Object [] {"AEA", "CDC", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bucketMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.sugar});
+ModLoader.addRecipe(new ItemStack(chocoBarSmall, 2), new Object [] {"AEA", "CDC", "ABA", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.bowlMilk, Character.valueOf('C'), Item.sugar, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.sugar});
+```
+
 ### Sushi
 
 ![sushi](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/120338dd-d24f-44c1-838c-da0eb14bcd25)
