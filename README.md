@@ -241,6 +241,117 @@ Items:
 * artichoke
 * mushroom mix, ham mix, artichoke mix, olive mix, ham and mushroom mix, ham and pineapple mix, four seasons mix, assortie mix
 
+Code:
+```
+ModLoader.addRecipe(new ItemStack(artichoke, 1), new Object [] {" A ", "BCB", " B ", Character.valueOf('B'), new ItemStack(BlockTallGrass.tallGrass, 1, 1), Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 13), Character.valueOf('C'), Item.seeds});
+ModLoader.addRecipe(new ItemStack(bowlMixMushrooms, 2), new Object [] {"AC", "BB", Character.valueOf('A'), BlockFlower.mushroomRed, Character.valueOf('C'), BlockFlower.mushroomBrown, Character.valueOf('B'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMixMushrooms, 2), new Object [] {"CA", "BB", Character.valueOf('A'), BlockFlower.mushroomRed, Character.valueOf('C'), BlockFlower.mushroomBrown, Character.valueOf('B'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMixHam, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.ham, Character.valueOf('B'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMixArtichoke, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.artichoke, Character.valueOf('B'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMixOlives, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.olives, Character.valueOf('B'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMixHamMushrooms, 3), new Object [] {"ADC", "BBB", Character.valueOf('A'), BlockFlower.mushroomRed, Character.valueOf('C'), BlockFlower.mushroomBrown, Character.valueOf('B'), Item.bowlEmpty, Character.valueOf('D'), Item.ham});
+ModLoader.addRecipe(new ItemStack(bowlMixHamMushrooms, 3), new Object [] {"CDA", "BBB", Character.valueOf('A'), BlockFlower.mushroomRed, Character.valueOf('C'), BlockFlower.mushroomBrown, Character.valueOf('B'), Item.bowlEmpty, Character.valueOf('D'), Item.ham});
+ModLoader.addRecipe(new ItemStack(bowlMixHamPineapple, 3), new Object [] {"AC", "BB", Character.valueOf('A'), Item.ham, Character.valueOf('C'), Item.pineapple, Character.valueOf('B'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMixHamPineapple, 3), new Object [] {"CA", "BB", Character.valueOf('A'), Item.ham, Character.valueOf('C'), Item.pineapple, Character.valueOf('B'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMixSeasons, 8), new Object [] {"AAB", "D B", "DCC", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"BAB", "C C", "DAD", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"BAB", "D D", "CAC", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"CAC", "B B", "DAD", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"CAC", "D D", "BAB", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"DAD", "B B", "CAC", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"DAD", "C C", "BAB", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"ABA", "C C", "DBD", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"ABA", "D D", "CBC", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"CBC", "A A", "DBD", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"CBC", "D D", "ABA", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"DBD", "A A", "CBC", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"DBD", "C C", "ABA", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"ACA", "B B", "DCD", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"ACA", "D D", "BCB", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"BCB", "A A", "DCD", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"BCB", "D D", "ACA", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"DCD", "A A", "BCB", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"DCD", "B B", "ACA", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"ADA", "B B", "CDC", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"ADA", "C C", "BDB", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"BDB", "A A", "CDC", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"BDB", "C C", "ADA", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"CDC", "A A", "BDB", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(bowlMixAssortie, 8), new Object [] {"CDC", "B B", "ADA", Character.valueOf('A'), Item.bowlMixHam, Character.valueOf('B'), Item.bowlMixOlives, Character.valueOf('C'), Item.bowlMixArtichoke, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawCheese, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.cheese});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawCheese, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.cheese});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawAnchovy, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.fishRaw});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawAnchovy, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.fishRaw});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawVegetarian, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.vegetables});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawVegetarian, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.vegetables});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawHam, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.ham});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawHam, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.ham});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawSalami, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.salami});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawSalami, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.salami});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawMush, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawMush, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixMushrooms});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawHamNMush, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixHamMushrooms});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawHamNMush, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixHamMushrooms});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawHamNPine, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixHamPineapple});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawHamNPine, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixHamPineapple});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawOlives, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.olives});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawOlives, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.olives});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawartichoke, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.artichoke});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawartichoke, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.artichoke});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawSeasons, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixSeasons});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawSeasons, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixSeasons});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawAssortie, 1), new Object [] {"ABA", "CDC", "ABA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixAssortie});
+ModLoader.addRecipe(new ItemStack(pizzaWholeRawAssortie, 1), new Object [] {"ACA", "BDB", "ACA", Character.valueOf('A'), Item.dough, Character.valueOf('B'), Item.cheese, Character.valueOf('C'), Item.tomato, Character.valueOf('D'), Item.bowlMixAssortie});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawCheese, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawCheese});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawAnchovy, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawAnchovy});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawVegetarian, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawVegetarian});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawHam, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawHam});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawSalami, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawSalami});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawMush, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawMush});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawHamNMush, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawHamNMush});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawHamNPine, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawHamNPine});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawOlives, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawOlives});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawartichoke, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawartichoke});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawSeasons, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawSeasons});
+ModLoader.addRecipe(new ItemStack(pizzaSliceRawAssortie, 8), new Object [] {"#", Character.valueOf('#'), Item.pizzaWholeRawAssortie});
+ModLoader.addSmelting(Item.pizzaWholeRawCheese.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedCheese, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawAnchovy.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedAnchovy, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawVegetarian.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedVegetarian, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawHam.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedHam, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawSalami.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedSalami, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawMush.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedMush, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawHamNMush.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedHamNMush, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawHamNPine.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedHamNPine, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawOlives.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedOlives, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawartichoke.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedartichoke, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawSeasons.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedSeasons, 1));
+ModLoader.addSmelting(Item.pizzaWholeRawAssortie.shiftedIndex, new ItemStack(Item.pizzaWholeCoockedAssortie, 1));
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedCheese, 8), new Object [] {Item.pizzaWholeCoockedCheese});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedAnchovy, 8), new Object [] {Item.pizzaWholeCoockedAnchovy});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedVegetarian, 8), new Object [] {Item.pizzaWholeCoockedVegetarian});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedHam, 8), new Object [] {Item.pizzaWholeCoockedHam});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedSalami, 8), new Object [] {Item.pizzaWholeCoockedSalami});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedMush, 8), new Object [] {Item.pizzaWholeCoockedMush});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedHamNMush, 8), new Object [] {Item.pizzaWholeCoockedHamNMush});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedHamNPine, 8), new Object [] {Item.pizzaWholeCoockedHamNPine});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedOlives, 8), new Object [] {Item.pizzaWholeCoockedOlives});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedartichoke, 8), new Object [] {Item.pizzaWholeCoockedartichoke});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedSeasons, 8), new Object [] {Item.pizzaWholeCoockedSeasons});
+ModLoader.addShapelessRecipe(new ItemStack(pizzaSliceCoockedAssortie, 8), new Object [] {Item.pizzaWholeCoockedAssortie});
+ModLoader.addSmelting(Item.pizzaSliceRawCheese.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedCheese, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawAnchovy.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedAnchovy, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawVegetarian.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedVegetarian, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawHam.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedHam, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawSalami.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedSalami, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawMush.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedMush, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawHamNMush.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedHamNMush, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawHamNPine.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedHamNPine, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawOlives.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedOlives, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawartichoke.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedartichoke, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawSeasons.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedSeasons, 1));
+ModLoader.addSmelting(Item.pizzaSliceRawAssortie.shiftedIndex, new ItemStack(Item.pizzaSliceCoockedAssortie, 1));
+```
+
 ### Snacks
 
 ![snacks](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/2f1d284d-0053-45c2-87a1-b8ac779106ed)
