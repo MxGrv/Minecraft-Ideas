@@ -438,6 +438,67 @@ Items:
 * vanilla and chocolate mix
 * paper cup, waffle cup, waffle cone
 
+Code:
+```
+ModLoader.addRecipe(new ItemStack(bowlMixStracciatella, 1), new Object [] {"A", "B", "C", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.vanilla, Character.valueOf('C'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(bowlMixStracciatella, 1), new Object [] {"B", "A", "C", Character.valueOf('A'), new ItemStack(Item.dyePowder, 1, 3), Character.valueOf('B'), Item.vanilla, Character.valueOf('C'), Item.bowlEmpty});
+ModLoader.addRecipe(new ItemStack(icePaperCup, 3), new Object [] {"% %", "%%%", Character.valueOf('%'), Item.paper});
+ModLoader.addRecipe(new ItemStack(iceWaffleCup, 3), new Object [] {"% %", "%%%", Character.valueOf('%'), Item.dough});
+ModLoader.addRecipe(new ItemStack(iceWaffleCone, 2), new Object [] {"% %", "% %", " % ", Character.valueOf('%'), Item.dough});
+ModLoader.addRecipe(new ItemStack(iceBallApple, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.appleRed});
+ModLoader.addRecipe(new ItemStack(iceBallChoco, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), new ItemStack(Item.dyePowder, 1, 3)});
+ModLoader.addRecipe(new ItemStack(iceBallMelon, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.melon});
+ModLoader.addRecipe(new ItemStack(iceBallPineapple, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.pineapple});
+ModLoader.addRecipe(new ItemStack(iceBallStrawberry, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.strawberry});
+ModLoader.addRecipe(new ItemStack(iceBallRaspberry, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.raspberry});
+ModLoader.addRecipe(new ItemStack(iceBallCherry, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.cherry});
+ModLoader.addRecipe(new ItemStack(iceBallOrange, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.orange});
+ModLoader.addRecipe(new ItemStack(iceBallPeach, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.peach});
+ModLoader.addRecipe(new ItemStack(iceBallGrape, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.grapes});
+ModLoader.addRecipe(new ItemStack(iceBallVanilla, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.vanilla});
+ModLoader.addRecipe(new ItemStack(iceBallCaramel, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.caramel});
+ModLoader.addRecipe(new ItemStack(iceBallStracciatella, 1), new Object [] {"ABA", "CDC", "AEA", Character.valueOf('A'), Item.bucketMilk, Character.valueOf('B'), Item.sugar, Character.valueOf('C'), Item.snowball, Character.valueOf('D'), Item.egg, Character.valueOf('E'), Item.bowlMixStracciatella});
+ModLoader.addRecipe(new ItemStack(icePaperCupApple, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallApple, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupChoco, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallChoco, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupMelon, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallMelon, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupPineapple, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallPineapple, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupStrawberry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallStrawberry, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupRaspberry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallRaspberry, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupCherry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallCherry, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupOrange, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallOrange, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupPeach, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallPeach, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupGrape, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallGrape, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupVanilla, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallVanilla, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupCaramel, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallCaramel, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(icePaperCupStracciatella, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallStracciatella, Character.valueOf('B'), Item.icePaperCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupApple, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallApple, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupChoco, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallChoco, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupMelon, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallMelon, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupPineapple, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallPineapple, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupStrawberry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallStrawberry, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupRaspberry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallRaspberry, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupCherry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallCherry, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupOrange, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallOrange, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupPeach, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallPeach, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupGrape, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallGrape, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupVanilla, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallVanilla, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupCaramel, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallCaramel, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleCupStracciatella, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallStracciatella, Character.valueOf('B'), Item.iceWaffleCup});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeApple, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallApple, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeChoco, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallChoco, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeMelon, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallMelon, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConePineapple, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallPineapple, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeStrawberry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallStrawberry, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeRaspberry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallRaspberry, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeCherry, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallCherry, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeOrange, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallOrange, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConePeach, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallPeach, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeGrape, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallGrape, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeVanilla, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallVanilla, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeCaramel, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallCaramel, Character.valueOf('B'), Item.iceWaffleCone});
+ModLoader.addRecipe(new ItemStack(iceWaffleConeStracciatella, 1), new Object [] {"A", "B", Character.valueOf('A'), Item.iceBallStracciatella, Character.valueOf('B'), Item.iceWaffleCone});
+```
+
 ### Drinks
 
 ![drinks](https://github.com/MxGrv/Minecraft-Ideas/assets/18613763/16600de0-950b-4236-ac19-bb8df9a4fc8c)
